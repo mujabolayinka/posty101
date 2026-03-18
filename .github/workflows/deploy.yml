@@ -1,5 +1,7 @@
-on: push
-name: 🚀 Deploy website on push
+on: 
+  push:
+    branches : [main]
+name: 🚀 Deploy invento app to user server infinityfree
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -23,4 +25,7 @@ jobs:
       with:
         server: ftpupload.net
         username: if0_41420838
-        password: ${{ secrets.password }}
+        password: vr6UBKDWENQ
+        server-dir: ./htdocs/
+        local-dir: ./dist/
+        dangerous-clean-slate: true
