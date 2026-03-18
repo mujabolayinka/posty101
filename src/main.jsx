@@ -17,12 +17,12 @@ createRoot(document.getElementById('root')).render(
     <AppNameProvider>
       <ProductProvider>
         {/* <Meal /> */}
-      {/* <Inventory /> */}
+      <Inventory />
       </ProductProvider>
 
     {/* <App /> */}
     {/* <Bank /> */}
-    <Blogger />
+    {/* <Blogger /> */}
 
     </AppNameProvider>
   
